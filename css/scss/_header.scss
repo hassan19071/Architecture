@@ -113,8 +113,14 @@
         img{
             width: 100%;
             height:calc(100vh - 94px - 55px);
+            @media (max-width:991px) {
+                height:650px;
+            }
+            @media (max-width:720px) {
+                height:600px;
+            }
             @media (max-width:676px) {
-                height:calc(70vh);
+                height:550px;
             }
         }
         .carousel-indicators{
@@ -164,16 +170,16 @@
             h1{
                 font-size: 80px;
                 color: #fff;
-                font-weight: 600;
+                font-weight: 800;
                 margin: 0 !important;
                 @media (max-width:991px) {
-                    font-size: 70px;
+                    font-size: 55px;
                 }
                 @media (max-width:720px) {
-                    font-size: 60px;
+                    font-size: 43px;
                 }
                 @media (max-width:676px) {
-                    font-size: 45px;
+                    font-size: 33px;
                 }
             }
             p{
@@ -181,7 +187,7 @@
                 width: 70%;
                 margin: 10px 0 25px!important;
                 @media (max-width:720px) {
-                    width: 85%;
+                    width: 90%;
                     font-size: 17px;
                 }
             }
